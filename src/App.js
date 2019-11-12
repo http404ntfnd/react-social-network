@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
-import Header from './Header.js';
-import Technologies from './Technologies.js';
+import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
+import Profile from './components/Profile/Profile';
 
 const App = () => {
   return (
-  <div>
+  <div className="app-wrapper">
       <Header />
-      <Technologies />
+      <Navbar />
+      <Profile />
   </div>);  
 }
 

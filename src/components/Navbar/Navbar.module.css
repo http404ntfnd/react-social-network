@@ -1,0 +1,19 @@
+.nav{
+    grid-area: nav;
+    min-height: 100vh;
+}
+
+.nav__list_item{
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.nav__list_item_active{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nav__list_item_link{
+    text-decoration: none;
+    color: #000000;
+}

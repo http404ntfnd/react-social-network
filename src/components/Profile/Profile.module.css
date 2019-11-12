@@ -1,0 +1,9 @@
+.main{
+    grid-area: main;
+  }
+  
+.main__wallpaper{
+    display: block;
+    max-height: 150px;
+    width: 100%;
+}
