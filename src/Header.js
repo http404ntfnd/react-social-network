@@ -1,13 +1,11 @@
 import React from 'react';
 
 const Header = () => {
-    return (
-        <div>
-            <a href="#"> Home </a>
-            <a href="#">  News </a>
-            <a href="#">  Messages </a>
-        </div> 
-    )
+  return (<div>
+          <a href='#s'>Home</a>
+          <a href='#s'>News Feed</a> 
+          <a href='#s'>Messages</a>
+        </div>);
 }
 
 export default Header;

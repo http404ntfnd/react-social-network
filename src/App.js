@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
-import Technologies from './Technologies';
-import Header from './Header';
+import Header from './Header.js';
+import Technologies from './Technologies.js';
 
 const App = () => {
   return (
-    <div className="App">
-      <Header /> 
+  <div>
+      <Header />
       <Technologies />
-    </div>
-  );
+  </div>);  
 }
 
 export default App;

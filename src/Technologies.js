@@ -2,15 +2,15 @@ import React from 'react';
 
 const Technologies = () => {
     return (
-        <div> 
-            <ul>
-                <li> CSS  </li>
-                <li> HTML </li>
-                <li> JS   </li>
-                <li> React </li>
-            </ul>
-        </div> 
-    )
-}
+      <div>
+          <ul>
+            <li>css</li>
+            <li>html</li>
+            <li>js</li>
+            <li>react</li>
+          </ul>
+        </div>
+    );
+  }
 
-export default Technologies;
+  export default Technologies;
