@@ -3,17 +3,17 @@
     min-height: 100vh;
 }
 
-.nav__list_item{
+.item{
     text-decoration: none;
     margin-bottom: 20px;
 }
 
-.nav__list_item_active{
+.active{
     text-decoration: underline;
     font-weight: bold;
 }
 
-.nav__list_item_link{
+.link{
     text-decoration: none;
     color: #000000;
 }

@@ -1,23 +1,23 @@
 import React from 'react'
-import classes from './Navbar.module.css';
+import s from './Navbar.module.css';
 
 const Navbar = () => {
-    return <nav className={classes.nav}>
-    <ul className={classes.nav__list}>
-      <li className={classes.nav__list_item}>
-        <a href="#" className={`${classes.nav__list_item} ${classes.nav__list_item_active}`}>Profile</a>
+    return <nav className={s.nav}>
+    <ul className={s.list}>
+      <li className={s.item}>
+        <a href="#" className={`${s.item} ${s.active}`}>Profile</a>
       </li>
-      <li className={classes.nav__list_item}>
-        <a href="#" className={classes.nav__list_item_link}>Messages</a>
+      <li className={s.item}>
+        <a href="#" className={s.link}>Messages</a>
       </li>
-      <li className={classes.nav__list_item}>
-        <a href="#" className={classes.nav__list_item_link}>News</a>
+      <li className={s.item}>
+        <a href="#" className={s.link}>News</a>
       </li>
-      <li className={classes.nav__list_item}>
-        <a href="#" className={classes.nav__list_item_link}>Music</a>
+      <li className={s.item}>
+        <a href="#" className={s.link}>Music</a>
       </li>
-      <li className={classes.nav__list_item}>
-        <a href="#" className={classes.nav__list_item_link}>Settings</a>
+      <li className={s.item}>
+        <a href="#" className={s.link}>Settings</a>
       </li>
     </ul>
   </nav>

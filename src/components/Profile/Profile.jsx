@@ -1,15 +1,14 @@
 import React from 'react'
-import classes from './Profile.module.css'
+import s from './Profile.module.css'
+
+// start import components
+import MyPosts from './MyPosts/MyPosts';
 
 const Profile = () => {
-    return <main className={classes.main}>
+    return <main className={s.main}>
         <section>
-            <img className={classes.main__wallpaper} src="http://hdwpro.com/wp-content/uploads/2017/11/Awesome-Wallpaper.jpg" alt="wallpaper"/>
             <div> ava + description </div>
-            <div> My posts </div>
-            <div> New posts</div>
-            <div> post 1</div>
-
+            <MyPosts />
         </section>
     </main>
 }

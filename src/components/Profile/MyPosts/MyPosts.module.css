@@ -1,0 +1,32 @@
+.post__new {
+    display: flex;
+    flex-direction: column;
+}
+
+.post__add{
+    margin-top: 15px;
+    padding: 15px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
+}
+
+.post__new_btn{
+    min-height: 50px;
+    max-width: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #C1C1C1;
+    color: #000;
+    font-size: 24px;
+    border-color: none;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+    outline: 0;
+}
+
+.post__new_btn:hover{
+    background-color: #1EA123;
+    color: #fff;
+    cursor: pointer;
+}
