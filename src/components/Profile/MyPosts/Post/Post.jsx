@@ -7,6 +7,7 @@ const Post = (props) => {
             <div className={s.post__wrapper}>
                 <img src="https://infuture.ru/filemanager/Flight1.jpg" alt="avatar" className={s.post__ava}/>
                 { props.message }
+                
             </div>
             <div className={s.post__like}> { props.likes} likes </div>
         </div>

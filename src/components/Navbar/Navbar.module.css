@@ -17,3 +17,7 @@
     text-decoration: none;
     color: #000000;
 }
+
+.link__active{
+    color: red;
+}

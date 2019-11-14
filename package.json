@@ -1,5 +1,5 @@
 {
-  "name": "react-kabzda-1",
+  "name": "react-social-network",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,5 +21,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "react-router-dom": "^5.1.2"
+  }
 }

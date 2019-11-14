@@ -1,4 +1,4 @@
-.app-wrapper{
+.app__wrapper{
   display: grid;
   grid-template-areas: 
     "header header header"
@@ -7,6 +7,10 @@
   grid-template-columns: 2fr 10fr;
   grid-gap: 10px;
   position: relative;
+}
+
+.app__wrapper_content{
+  grid-area: main;
 }
 
 ul {
