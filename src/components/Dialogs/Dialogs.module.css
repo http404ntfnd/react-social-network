@@ -3,27 +3,32 @@
     grid-template-columns: 2fr 10fr;
 }
 
-.conversation__item{
-    margin-bottom: 20px;
-    font-size: 20px;
-    padding: 10px;
-}
-
 a{
     text-decoration: none;
+    color: #fefefe;
 }
 
-a:hover{
-    color: yellow;
-}
 
 .dialog__messages {
-    background-color: #f5f5f5;
-    padding-top: 20px;
+    background-color: #b0b0b0;
     min-height: 100vh;
 }
 
 .dialog__conversation{
-    padding-top: 20px;
-    background-color: #24292e;
+    background-color: #b0b0b0;
+}
+
+.dialog__conversation_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-height: 50px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+.dialog__conversation_link{
+    color: #333333;
 }

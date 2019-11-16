@@ -1,23 +1,86 @@
 .nav{
-    grid-area: nav;
-    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100px;
+    min-height: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: radial-gradient(circle, rgba(2,0,36,0.9290091036414566) 0%, rgba(24,27,38,1) 50%, rgba(24,26,38,0.8869922969187675) 100%);
 }
 
-.item{
-    text-decoration: none;
-    margin-bottom: 20px;
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-.active{
-    text-decoration: underline;
-    font-weight: bold;
+.link:hover{
+    background-color: #6d6d6d;
+    color: #eeeeee;
 }
 
 .link{
+    max-height: 60px;
+    min-height: 60px;
+    min-width: 60px;
+    max-width: 60px;
     text-decoration: none;
-    color: #000000;
+    color: #000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,.75);
+    transition: all 0.5s ease;
+    color: #eeeeee;
+    font-size: 14px;
+    font-weight: 100;
 }
 
-.link__active{
-    color: red;
+.item >  .link::after{
+    content: '';
+    display: block;
+    background-size: 30px;
+    max-width: 30px;
+    max-height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    margin-bottom: 3px;
+    z-index: 99;
+}
+
+.item:nth-child(1) >  .link::after{
+    background-image: url('https://image.flaticon.com/icons/svg/2226/2226625.svg');
+}
+
+.item:nth-child(2) >  .link::after{
+    background-image: url('https://image.flaticon.com/icons/svg/2226/2226648.svg');
+}
+
+.item:nth-child(3) >  .link::after{
+    background-image: url('https://image.flaticon.com/icons/svg/2226/2226631.svg');
+}
+
+.item:nth-child(4) >  .link::after{
+    background-image: url('https://image.flaticon.com/icons/svg/2226/2226721.svg');
+}
+
+.item:nth-child(5) >  .link::after{
+    background-image: url('https://image.flaticon.com/icons/svg/2226/2226697.svg');
+}
+
+
+.active{
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+    background-color: #eeeeee;
 }

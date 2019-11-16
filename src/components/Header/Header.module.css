@@ -1,13 +1,15 @@
 .header{
     grid-area: header;
-    background-color: #24292e;
-    display: grid;
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,0.9290091036414566) 0%, rgba(24,27,38,1) 50%, rgba(24,26,38,0.8869922969187675) 100%);
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    padding: 5px 20px;
 }
   
 .header img{
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 60px;
+    max-height: 60px;
 }
 

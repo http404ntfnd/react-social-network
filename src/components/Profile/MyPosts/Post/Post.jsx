@@ -9,7 +9,7 @@ const Post = (props) => {
                 { props.message }
                 
             </div>
-            <div className={s.post__like}> { props.likes} likes </div>
+            <div className={s.post__like}> { props.likes} <img src="https://image.flaticon.com/icons/svg/785/785116.svg" alt="flame"/> </div>
         </div>
         
     )

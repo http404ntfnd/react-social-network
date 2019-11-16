@@ -1,12 +1,12 @@
 import React from 'react';
-import './Profile.module.css';
+import s from './Profile.module.css';
 
 // start import components
 import MyPosts from './MyPosts/MyPosts';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 const Profile = () => {
-    return <main>
+    return <main className={s.profile__main}>
         <section>
             <ProfileInfo />
             <MyPosts />
