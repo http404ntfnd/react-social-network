@@ -2,11 +2,9 @@ import React from 'react'
 import s from './MyPosts.module.css'
 import Post from './Post/Post';
 
-const MyPosts = () => {
-    let postData = [
-        { message: "My day was good, what about you?", likes: 10 },
-        { message: "It`s my first post", likes: 28 },
-    ]
+const MyPosts = (props) => {
+    let postElements = props.postData
+        .map(p => <Post message={p.message} likes={p.likes} />);
 
     return (
         <div> My posts
@@ -15,8 +13,7 @@ const MyPosts = () => {
                 <button className={s.post__new_btn}>Add post</button>
             </div>
             <div className={s.post__wrapper}>
-                <Post message={postData[0].message} likes={postData[0].likes} />
-                <Post message={postData[1].message} likes={postData[1].likes} />
+                {postElements}
             </div>
         </div>
     )

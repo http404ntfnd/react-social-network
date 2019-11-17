@@ -14,18 +14,29 @@ import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
 
 
-const App = () => {
+const App = (props) => {
+
   return (
     <BrowserRouter>
       <div className="app__wrapper">
         <Header />
         <Navbar />
         <div className="app__wrapper_content">
-          <Route exact path='/profile' component={Profile}/>
-          <Route exact path='/dialogs' component={Dialogs}/>
-          <Route exact path='/news' component={News}/>
-          <Route exact path='/music' component={Music}/>
-          <Route exact path='/settings' component={Settings}/>
+          <Route exact path='/profile'
+            render={() => <Profile state={props.state.profilePage}/>}
+          />
+          <Route exact path='/dialogs'
+            render={() => <Dialogs state={props.state.dialogsPage} />}
+          />
+          <Route exact path='/news'
+            render={() => <News />}
+          />
+          <Route exact path='/music'
+            render={() => <Music />}
+          />
+          <Route exact path='/settings'
+            render={() => <Settings />}
+          />
         </div>
       </div>
     </BrowserRouter>

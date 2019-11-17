@@ -6,7 +6,9 @@
 
 .app__wrapper_content{
   grid-area: main;
-  background: #b0b0b0;
+  min-height: 100vh;
+  background: #191b23;
+  color: #eeeeee;
 }
 
 ul {

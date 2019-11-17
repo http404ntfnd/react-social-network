@@ -10,6 +10,10 @@
     background: radial-gradient(circle, rgba(2,0,36,0.9290091036414566) 0%, rgba(24,27,38,1) 50%, rgba(24,26,38,0.8869922969187675) 100%);
 }
 
+.nav:hover{
+    cursor: pointer;
+}
+
 .list{
     display: flex;
     justify-content: center;
@@ -19,8 +23,11 @@
 }
 
 .link:hover{
-    background-color: #6d6d6d;
-    color: #eeeeee;
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+    background-color: #eeeeee;
+    cursor: pointer;
 }
 
 .link{
@@ -38,21 +45,22 @@
     margin-right: 20px;
     margin-left: 20px;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0,0,0,.75);
-    transition: all 0.5s ease;
+    box-shadow: 0 0 10px #eeeeee;
+    transition: all 0.6s ease;
     color: #eeeeee;
     font-size: 14px;
+    cursor: pointer;
     font-weight: 100;
 }
 
 .item >  .link::after{
     content: '';
     display: block;
-    background-size: 30px;
-    max-width: 30px;
-    max-height: 30px;
-    min-width: 30px;
-    min-height: 30px;
+    background-size: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    min-height: 40px;
     margin-bottom: 3px;
     z-index: 99;
 }

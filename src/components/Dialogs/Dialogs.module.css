@@ -12,10 +12,11 @@ a{
 .dialog__messages {
     background-color: #b0b0b0;
     min-height: 100vh;
+    box-shadow: 0 0 10px #b0b0b0;
 }
 
 .dialog__conversation{
-    background-color: #b0b0b0;
+    background-color: #0e0f14;
 }
 
 .dialog__conversation_item{
@@ -24,11 +25,30 @@ a{
     align-items: center;
     padding: 10px;
     min-height: 50px;
-    border-width: 1px;
-    border-style: solid;
+    box-shadow: 0 0 10px #b0b0b0;
 }
 
 
 .dialog__conversation_link{
-    color: #333333;
+    color: #fff;
+}
+
+.dialog__messages{
+    padding: 40px;
+    background-color: #191b23;
+}
+
+.dialog__messages_item{
+    display: flex;
+    padding: 10px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    color:#cfd0d6;
+    box-shadow: 0 0 10px #b0b0b0;
+    min-height: 20px;
+    min-width: 200px;
+    max-width: auto;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
