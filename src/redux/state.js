@@ -1,3 +1,5 @@
+import { rerenderEntireTree } from "../render";
+
 let state = {
     profilePage:{
         postData: [
@@ -5,7 +7,8 @@ let state = {
             { message: "What dance do all astronauts know? The moonwalk.", likes: 28 },
             { message: "What is an astronauts favourite chocolate? A Mars bar of course!", likes: 2 },
             { message: "What is an astronaut's favourite place on a computer? The space bar...", likes: 15 },
-        ]
+        ],
+        newPostText: 'What`s new on your life',
     },
     dialogsPage:{
         dialogsData: [
@@ -26,4 +29,21 @@ let state = {
     }
 }
 
+window.state = state;
+
+export let addPost = () => {
+    let newPost = {
+        message: state.profilePage.newPostText,
+        likes: 4
+    };
+    
+    state.profilePage.postData.push(newPost);
+    state.profilePage.newPostText = '';
+    rerenderEntireTree(state);
+}
+
+export let updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
+}
 export default state;

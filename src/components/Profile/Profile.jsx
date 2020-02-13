@@ -6,11 +6,14 @@ import MyPosts from './MyPosts/MyPosts';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 const Profile = (props) => {
-
     return <main className={s.profile__main}>
         <section>
             <ProfileInfo />
-            <MyPosts postData={props.state.postData}/>
+            <MyPosts
+                newPostText={props.profilePage.newPostText}
+                postData={props.profilePage.postData} 
+                addPost={props.addPost}
+                updateNewPostText={props.updateNewPostText}/>
         </section>
     </main>
 }
